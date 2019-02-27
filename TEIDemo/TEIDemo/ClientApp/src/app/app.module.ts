@@ -20,7 +20,6 @@ import { EditComponent } from './edit/edit.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]

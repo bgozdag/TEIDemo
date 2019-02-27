@@ -14,6 +14,7 @@ export class EditComponent implements OnInit {
   @Input()
   document = new Document;
   index: number;
+  alert: boolean = false;
 
   constructor(private service: DocumentsService, private route: ActivatedRoute, private router: Router) {
     this.route.params.subscribe((param: any) => {
@@ -31,6 +32,10 @@ export class EditComponent implements OnInit {
 
 
   saveDocument() {
+    if (this.document.docName == null) {
+      this.alert = true;
+      return;
+    }
     this.document.updateDate = new Date;
     this.service.updateDocument(this.document).subscribe(
       data => {

@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   i: number = 1;
 
   x = new Document;
+  alert: boolean = false;
 
 
  
@@ -29,6 +30,11 @@ export class HomeComponent implements OnInit {
   }
 
   public addDocument() {
+    if (this.document.docName == null) {
+      this.alert = true;
+      return;
+    }
+    this.alert = false;
     this.document.id = this.i++;
     this.document.createDate = new Date;
     this.document.updateDate = new Date;

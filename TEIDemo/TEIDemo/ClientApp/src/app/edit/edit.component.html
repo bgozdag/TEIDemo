@@ -6,10 +6,11 @@
         <div class="form-group">
           <input type="text" id="name-input" [(ngModel)]="document.docName" (keydown.enter)="addDocument()" name="docname" class="form-control" placeholder="Document Name" ng-required="true" />
         </div>
+        <div *ngIf="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+          Document name cannot be empty.
+        </div>
         <button type="button" class="btn btn-success" (click)="saveDocument()">Save</button>
       </form>
     </div>
-
- 
 </div>
   </div>
