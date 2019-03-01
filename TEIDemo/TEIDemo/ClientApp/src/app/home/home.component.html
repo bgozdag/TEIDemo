@@ -4,7 +4,7 @@
       <h4>New Document</h4>
       <form>
         <div class="form-group">
-          <input type="text" id="name-input" [(ngModel)]="document.docName" (keydown.enter)="addDocument()" name="docname" class="form-control" placeholder="Document Name" required="true" maxlength="15" />
+          <input type="text" id="name-input" [(ngModel)]="document.docName" (keydown.enter)="addDocument()" name="docname" class="form-control" placeholder="Document Name" required maxlength="15" />
         </div>
         <div *ngIf="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
           Document name cannot be empty.

@@ -32,7 +32,7 @@ export class EditComponent implements OnInit {
 
 
   saveDocument() {
-    if (this.document.docName == null) {
+    if (this.document.docName == null || this.document.docName == "") {
       this.alert = true;
       return;
     }
