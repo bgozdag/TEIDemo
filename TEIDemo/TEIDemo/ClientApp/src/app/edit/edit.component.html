@@ -10,12 +10,17 @@
           Document name cannot be empty.
         </div>
         <button type="button" class="btn btn-success" (click)="saveDocument()">Save</button>
+        <span>&nbsp;</span>
+        <button type="button" class="btn btn-primary" (click)="showHistory()">Document History</button>
       </form>
     </div>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-7">
     <textarea class="form-control" [(ngModel)]="document.text" rows="10" id="text"></textarea>
   </div>
+  <!--<div class="col-md-2">
+    <app-history i="{{index}}"></app-history>
+  </div>-->
 </div>
 
 

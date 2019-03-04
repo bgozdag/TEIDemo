@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EditComponent } from './edit/edit.component';
+import { HistoryComponent } from './history/history.component';
  
 
 @NgModule({
@@ -14,6 +15,7 @@ import { EditComponent } from './edit/edit.component';
     AppComponent,
     HomeComponent,
     EditComponent,
+    HistoryComponent,
   ],
   imports: [
     BrowserModule,

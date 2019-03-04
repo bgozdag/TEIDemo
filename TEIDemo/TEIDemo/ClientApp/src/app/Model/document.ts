@@ -4,5 +4,4 @@ export class Document {
   createDate: Date;
   updateDate: Date;
   text: string;
-
 }
